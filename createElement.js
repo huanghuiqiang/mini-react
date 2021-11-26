@@ -40,7 +40,7 @@ function render(element, container) {
     const dom = 
     element.type === 'TEXT_ELEMENT'
     ? document.createTextNode('')
-    : document.createElement(element, type);
+    : document.createElement(element.type);
 
     const isProperty = key => key !== 'children';
     Object.keys(element.props)
