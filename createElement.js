@@ -37,7 +37,9 @@ function createTextElement(text) {
 // )
 
 function render(element, container) {
+    const dom = document.createElement(element.type);
 
+    container.appendChild(dom);
 }
 
 const Didact = {
